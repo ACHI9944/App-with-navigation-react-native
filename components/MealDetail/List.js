@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 function List({ data }) {
   return data.map((dataPoint) => (

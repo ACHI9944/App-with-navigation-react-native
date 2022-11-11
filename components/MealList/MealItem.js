@@ -7,7 +7,8 @@ import {
   Text,
   View,
 } from "react-native";
-import MealDetails from "./MealDetails";
+import MealDetails from "../MealDetails";
+
 
 function MealItem({
   id,
@@ -26,7 +27,7 @@ function MealItem({
     <View style={styles.mealItem}>
       <Pressable
         android_ripple={{ color: "#ccc" }} // for android
-        style={({ pressed }) => (pressed ? styles.buttonPressed : null)} // for ios
+        style={({ pressed }) => (pressed ? styles.buttonPressed : null)} // for ios and android
         onPress={selectMealItemHandler}
       >
         <View style={styles.innerContainer}>
